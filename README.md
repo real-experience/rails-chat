@@ -7,6 +7,9 @@
 		- git add 
 		- git commit 
 		- git remote add origin *`repo link`*
+			- git remote -v
+				- git fetch
+				- git pull origin master
 		- git push -u origin master
 
 Here you go with first push in master branch.
