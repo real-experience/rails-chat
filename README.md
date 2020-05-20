@@ -1,24 +1,14 @@
-# README
+# Setup in local
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Install Ruby:
+* `ruby-install --latest`
 
-Things you may want to cover:
+##### Then install the newest Ruby version.
+* `ruby-install --latest ruby`
+* `ruby -v`
 
-* Ruby version
+### Install rails:
+* `gem install rail`
+* `rails -v` `Rails 6.0.2`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+URL: localhost:3000/
