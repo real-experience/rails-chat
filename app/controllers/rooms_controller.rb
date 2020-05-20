@@ -13,6 +13,11 @@ class RoomsController < ApplicationController
     @room = Room.new
   end
 
+  def show
+    @room_message = RoomMessage.new room: @room
+    @room_messages = @room.room_messages.includes(:user)
+  end  
+
   def create
     @room = Room.new permitted_parameters
 
@@ -47,8 +52,4 @@ class RoomsController < ApplicationController
     params.require(:room).permit(:name)
   end
 
-  def show
-    @room_message = RoomMessage.new room: @room
-    @room_messages = @room.room_messages.includes(:user)
-  end  
 end
