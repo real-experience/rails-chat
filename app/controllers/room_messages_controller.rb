@@ -3,11 +3,11 @@ class RoomMessagesController < ApplicationController
 
   def create
     @room_message = RoomMessage.create user: current_user,
-                                     room: @room,
-                                     message: params.dig(:room_message, :message)
+                                       room: @room,
+                                       message: params.dig(:room_message, :message)
 
     redirect_to room_path @room
-  # RoomChannel.broadcast_to @room, @room_message
+    # RoomChannel.broadcast_to @room, @room_message
   end
 
   protected
